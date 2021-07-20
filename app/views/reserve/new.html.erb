@@ -17,14 +17,14 @@
 	</dl>
 
 	<%= form.submit '確認画面へ' %>
+<% end %>
 
-	<h1>投稿一覧</h1>
-	<% @reserves.each do |reserve| %>
-	  <p>タイトル</p>
-	  <span><%= reserve.reserve_date %></span>
-	  <p>名前</p>
-	  <span><%= reserve.name %></span>
-	  <p>備考</p>
-	  <span><%= reserve.note %></span>
-	<% end %>
+<h1>投稿一覧</h1>
+<% @reserves.each do |reserve| %>
+  <p>タイトル</p>
+  <span><%= reserve.reserve_date %></span>
+  <p>名前</p>
+  <span><%= reserve.name %></span>
+  <p>備考</p>
+  <span><%= reserve.note %></span>
 <% end %>
